@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GhostScript | Haunted AI Terminal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars"></div>
+
+  <main class="container">
+    <header>
+      <div class="ghost">👻</div>
+      <h1>GhostScript</h1>
+      <p class="subtitle">A Haunted AI Terminal</p>
+      <span class="status">● THE SPIRIT IS ONLINE</span>
+    </header>
+
+    <section class="terminal">
+      <div class="terminal-bar">
+        <div class="lights">
+          <span></span><span></span><span></span>
+        </div>
+        <span>ghost@machine:~</span>
+        <button id="clearBtn" class="clear-btn">Clear</button>
+      </div>
+
+      <div id="output" class="output" aria-live="polite">
+        <p class="system">Initializing GhostScript...</p>
+        <p class="system">Connection established with the unknown.</p>
+        <p class="ghost-message">
+          GHOST: Welcome, human. I have been waiting for you...
+        </p>
+        <p class="system">Type help to discover the commands.</p>
+      </div>
+
+      <form id="commandForm" class="input-area">
+        <label for="command" class="prompt">visitor@ghost:~$</label>
+        <input
+          id="command"
+          type="text"
+          placeholder="Ask the ghost something..."
+          autocomplete="off"
+          required
+        >
+        <button type="submit">Send ↗</button>
+      </form>
+    </section>
+
+    <section class="actions">
+      <h2>Summon the unknown</h2>
+      <div class="button-grid">
+        <button class="action-btn" data-command="story">
+          📖 Generate Ghost Story
+        </button>
+        <button class="action-btn" data-command="haunt">
+          👁 Summon a Ghost
+        </button>
+        <button class="action-btn" data-command="joke">
+          💀 Dark Joke
+        </button>
+        <button class="action-btn" data-command="help">
+          ❓ Help
+        </button>
+      </div>
+    </section>
+
+    <footer>
+      <p>Built with curiosity and open innovation.</p>
+      <p class="footer-small">
+        A Halloween experiment • GhostScript v1.0
+      </p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
